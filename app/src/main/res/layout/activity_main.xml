@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:weightSum="9"
+    android:orientation="vertical"
+    android:gravity="bottom|center_horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/button1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <HorizontalScrollView
+        android:id="@+id/horizontal_scroll"
+        android:scrollbars="none"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txt_answer_big"
+            android:textColor="?attr/colorOnPrimary"
+            android:textAlignment="viewEnd"
+            android:textSize="@dimen/text_view_size_big"
+            android:singleLine="true"
+            android:scrollHorizontally="true"
+            android:layout_gravity="end"
+            android:text="2152154"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </HorizontalScrollView>
+
+
+
+    <TextView
+        android:id="@+id/txt_answer"
+        android:textAlignment="viewEnd"
+        android:textSize="@dimen/text_viw_size_small"
+        android:singleLine="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_gravity="end"
+        android:text="12562"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:background="@color/gray_light"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+
+    <TableLayout
+        android:layout_weight="5"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TableRow
+            android:weightSum="4"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_AC"
+                android:background="?selectableItemBackground"
+                android:layout_weight="1"
+                android:text="AC"
+                android:textSize="@dimen/button_text_size_small"
+                android:textColor="?attr/colorSecondary"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+            <Button
+                android:id="@+id/btn_p_open"
+                android:background="?selectableItemBackground"
+                android:layout_weight="1"
+                android:text="("
+                android:textSize="@dimen/button_text_size_big"
+                android:textColor="?attr/colorSecondary"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+            <Button
+                android:id="@+id/btn_p_close"
+                android:background="?selectableItemBackground"
+                android:layout_weight="1"
+                android:text=")"
+                android:textSize="@dimen/button_text_size_big"
+                android:textColor="?attr/colorSecondary"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+            <Button
+                android:id="@+id/btn_division"
+                android:background="?selectableItemBackground"
+                android:layout_weight="1"
+                android:text="/"
+                android:textSize="@dimen/button_text_size_big"
+                android:textColor="?attr/colorSecondary"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+        </TableRow>
+
+        <TableRow
+            android:weightSum="4"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_seven"
+                android:background="?selectableItemBackground"
+                android:layout_weight="1"
+                android:text="7"
+                android:textSize="@dimen/button_text_size_big"
+                android:textColor="?attr/colorOnPrimary"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+            <Button
+                android:id="@+id/btn_eight"
+                android:background="?selectableItemBackground"
+                android:layout_weight="1"
+                android:text="8"
+                android:textSize="@dimen/button_text_size_big"
+                android:textColor="?attr/colorOnPrimary"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+            <Button
+                android:id="@+id/btn_nine"
+                android:background="?selectableItemBackground"
+                android:layout_weight="1"
+                android:text="9"
+                android:textSize="@dimen/button_text_size_big"
+                android:textColor="?attr/colorOnPrimary"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+            <Button
+                android:id="@+id/btn_multiple"
+                android:background="?selectableItemBackground"
+                android:layout_weight="1"
+                android:text="*"
+                android:textSize="@dimen/button_text_size_big"
+                android:textColor="?attr/colorSecondary"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+        </TableRow>
+
+        <TableRow
+            android:weightSum="4"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_four"
+                android:background="?selectableItemBackground"
+                android:layout_weight="1"
+                android:text="4"
+                android:textSize="@dimen/button_text_size_big"
+                android:textColor="?attr/colorOnPrimary"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+            <Button
+                android:id="@+id/btn_five"
+                android:background="?selectableItemBackground"
+                android:layout_weight="1"
+                android:text="5"
+                android:textSize="@dimen/button_text_size_big"
+                android:textColor="?attr/colorOnPrimary"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+            <Button
+                android:id="@+id/btn_six"
+                android:background="?selectableItemBackground"
+                android:layout_weight="1"
+                android:text="6"
+                android:textSize="@dimen/button_text_size_big"
+                android:textColor="?attr/colorOnPrimary"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+            <Button
+                android:id="@+id/btn_minus"
+                android:background="?selectableItemBackground"
+                android:layout_weight="1"
+                android:text="-"
+                android:textSize="@dimen/button_text_size_big"
+                android:textColor="?attr/colorSecondary"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+        </TableRow>
+
+        <TableRow
+            android:weightSum="4"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_one"
+                android:background="?selectableItemBackground"
+                android:layout_weight="1"
+                android:text="1"
+                android:textSize="@dimen/button_text_size_big"
+                android:textColor="?attr/colorOnPrimary"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+            <Button
+                android:id="@+id/btn_two"
+                android:background="?selectableItemBackground"
+                android:layout_weight="1"
+                android:text="2"
+                android:textSize="@dimen/button_text_size_big"
+                android:textColor="?attr/colorOnPrimary"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+            <Button
+                android:id="@+id/btn_three"
+                android:background="?selectableItemBackground"
+                android:layout_weight="1"
+                android:text="3"
+                android:textSize="@dimen/button_text_size_big"
+                android:textColor="?attr/colorOnPrimary"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+            <Button
+                android:id="@+id/btn_plus"
+                android:background="?selectableItemBackground"
+                android:layout_weight="1"
+                android:text="+"
+                android:textSize="@dimen/button_text_size_big"
+                android:textColor="?attr/colorSecondary"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+        </TableRow>
+
+        <TableRow
+            android:weightSum="4"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_clear"
+                android:layoutDirection="rtl"
+                android:background="?selectableItemBackground"
+                android:layout_weight="1"
+                android:text=">"
+                android:textSize="@dimen/button_text_size_big"
+                android:textColor="?attr/colorSecondary"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+            <Button
+                android:id="@+id/btn_zero"
+                android:background="?selectableItemBackground"
+                android:layout_weight="1"
+                android:text="0"
+                android:textSize="@dimen/button_text_size_big"
+                android:textColor="?attr/colorOnPrimary"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+            <Button
+                android:id="@+id/btn_dot"
+                android:background="?selectableItemBackground"
+                android:layout_weight="1"
+                android:text="."
+                android:textSize="@dimen/button_text_size_big"
+                android:textColor="?attr/colorOnPrimary"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+            <FrameLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/btn_equal"
+                    android:background="@drawable/shape_circle"
+                    android:text="="
+                    android:textSize="@dimen/button_text_size_big"
+                    android:textColor="?attr/colorOnSecondary"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </FrameLayout>
+
+        </TableRow>
+
+
+    </TableLayout>
+
+
+</LinearLayout>
